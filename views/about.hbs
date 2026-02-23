@@ -4,30 +4,35 @@
 <section class="ui left aligned middle aligned segment">
   
     <h2>About the Playlist App </h2>
-      <p>
-        More information about the app
-      </p>
+      <h3>
+       Our Team
+      </h3>
 
-</section>
-<div class="ui centered card">
-  <div class="image">
-    <img src=" {{emps.image}}">
+
+  <div class="ui centered link cards">
+   {{#each employees}}
+    <div class="ui card">
+      <div class="image">
+    <img src="{{image}}">
   </div>
   <div class="content">
-    <a class="header"> {{emps.fullname}}</a>
+    <a class="header">{{fullname}}</a>
     <div class="meta">
-      <span class="date">Joined in  {{emps.joined}}</span>
+      <span class="date">Joined in {{joined}}</span>
     </div>
     <div class="description">
-       {{emps.name}} is an {{emps.job}} living in  {{emps.city}}.
+      {{name}} is an {{job}} living in {{city}}.
     </div>
   </div>
   <div class="extra content">
     <a>
       <i class="user icon"></i>
-      {{emps.mates}}  contacts
+      {{mates}} contacts
     </a>
   </div>
-</div>
+    </div>
+     {{/each}}
+  </div>
 
+</section>
 <!-- create this layout for the about page -->
