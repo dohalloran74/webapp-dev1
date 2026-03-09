@@ -20,6 +20,8 @@ router.get('/error', (request, response) => response.status(404).end('Page not f
 /*add this to add playlist route */
 router.get('/playlist/:id', playlist.createView);
 router.post('/playlist/:id/addsong', playlist.addSong);
+router.post('/dashboard/addplaylist', dashboard.addPlaylist);
+
 
 
 export default router;
