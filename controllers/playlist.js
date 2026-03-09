@@ -2,6 +2,8 @@
 
 import logger from '../utils/logger.js';
 import playlistStore from '../models/playlist-store.js';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const playlist = {
   createView(request, response) {
@@ -13,8 +15,23 @@ const playlist = {
       singlePlaylist: playlistStore.getPlaylist(playlistId)
     };
 
+    
     response.render('playlist', viewData);
   },
+
+  addSong(request, response) {
+    const playlistId = request.params.id;
+    const playlist = playlistStore.getPlaylist(playlistId);
+    const newSong = {
+      id: uuidv4(),
+      title: request.body.title,
+      artist: request.body.artist,
+    };
+    
+    playlistStore.addSong(playlistId, newSong);
+    response.redirect('/playlist/' + playlistId);
+},
+
 };
 
 export default playlist;
