@@ -18,9 +18,18 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
 
 
-const handlebars = create({extname: '.hbs'});
+const handlebars = create({
+  extname: '.hbs', 
+  helpers: {
+    uppercase: (inputString) => {
+        return inputString.toUpperCase();
+    },
+},
+
+});
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs");
+
 
 app.use("/", routes);
 
