@@ -18,43 +18,12 @@
           "id": "06",
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven"
-        },
-        {
-          "id": "2d5dc927-4753-4505-8fd1-fc9939a65871",
-          "title": "New Sonata ",
-          "artist": "Beethoven"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "title": "Beethoven Concertos",
-      "songs": [
-        {
-          "id": "07",
-          "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "08",
-          "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "09",
-          "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
         }
       ]
     },
     {
       "id": "03",
       "title": "Beethoven Unfinished Symphonies",
-      "songs": []
-    },
-    {
-      "id": "fec69a77-5e54-4b9c-927b-064b85a0888b",
-      "title": "Beethhoven Works",
       "songs": []
     }
   ]

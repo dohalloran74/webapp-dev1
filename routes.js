@@ -21,6 +21,10 @@ router.get('/error', (request, response) => response.status(404).end('Page not f
 router.get('/playlist/:id', playlist.createView);
 router.post('/playlist/:id/addsong', playlist.addSong);
 router.post('/dashboard/addplaylist', dashboard.addPlaylist);
+router.get('/playlist/:id/deletesong/:songid', playlist.deleteSong);
+router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
+
+
 
 
 
