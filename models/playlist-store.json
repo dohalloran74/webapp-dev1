@@ -3,16 +3,16 @@
     {
       "id": "01",
       "title": "Beethoven Sonatas",
-      "rating": 3, 
+      "rating": 3,
       "songs": [
         {
           "id": "04",
-          "title": "Piano Sonata No. 3",
+          "title": "Piano Sonata No. 4",
           "artist": "Beethoven"
         },
         {
           "id": "05",
-          "title": "Piano Sonata No. 7",
+          "title": "Piano Sonata No. 8",
           "artist": "Beethoven"
         },
         {
@@ -25,12 +25,11 @@
     {
       "id": "02",
       "title": "Beethoven Concertos",
-      "rating": 4, 
-
+      "rating": 4,
       "songs": [
         {
           "id": "07",
-          "title": "Piano Concerto No. 0",
+          "title": "Piano Concerto No. 5",
           "artist": "Beethoven"
         },
         {
