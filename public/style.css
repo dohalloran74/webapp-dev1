@@ -17,3 +17,8 @@ body {
   border:none;
   background: none;
 }
+
+
+.hide{
+    display: none;
+}

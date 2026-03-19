@@ -9,41 +9,15 @@
         <th class="two wide"> </th>
       </tr>
     </thead>
-  <tbody>
+    <tbody>
+      
       {{#each songs}}
-        <form 
-          class = "ui stacked segment form" 
-          action="/playlist/{{../id}}/updatesong/{{id}}" 
-          method="POST"
-        >
-          <tr class="fields">
-            <td class="field">
-              <span class="ui input">
-               <input type="text" name="title" autofocus required 
-                      title = "Please include a valid Title" placeholder="Title" 
-					  value = "{{title}}">
-              </span>
-            </td>
-            <td class="field">
-              <span class="ui input">
-                <input type="text" name="artist" required 
-                       title = "Please include a valid Artist" placeholder="Artist" 
-					   value = "{{artist}}">
-              </span>
-            </td>
-            <td class="center aligned">
-              <button type = "submit" class = "editSubmit">
-                <i class="ui pencil icon "></i>
-              </button>
-            </td>
-            <td class="center aligned">
-              <a href="/playlist/{{../id}}/deletesong/{{id}}">
-                <i class="ui black trash icon"></i>
-              </a>
-            </td>
-          </tr>
-        </form> 
+      
+        {{> listOneSong playlistId=../id}}
+        {{> editsong playlistId=../id}}
+                
       {{/each}}
+    
     </tbody>
   </table>
 
@@ -53,4 +27,3 @@
   </h3>
 
 {{/if}}
-
