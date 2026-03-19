@@ -24,7 +24,7 @@ const handlebars = create({
     uppercase: (inputString) => {
         return inputString.toUpperCase();
     },
-    
+
     formatDate: (date) => {
     let dateCreated = new Date(date);
     let options = {
@@ -34,6 +34,11 @@ const handlebars = create({
       day: "2-digit",
     };
     return `${dateCreated.toLocaleDateString("en-IE", options)}`;
+},
+
+highlightPopular: (rating) => {
+   let message = rating >= 4 ? "Popular with listeners!" :  "";
+   return message;
 },
 
 },
