@@ -30,6 +30,9 @@ router.get('/stats', stats.createView);
 // Add this route for searching by category
 router.get('/searchCategory', dashboard.createView);
 
+// Add this route for sorting data
+router.get('/sortData', dashboard.createView);
+
 
 
 
