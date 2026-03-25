@@ -27,6 +27,10 @@ router.get('/dashboard/deleteplaylist/:id', dashboard.deletePlaylist);
 router.post('/playlist/:id/updatesong/:songid', playlist.updateSong);
 router.get('/stats', stats.createView);
 
+// Add this route for searching by category
+router.get('/searchCategory', dashboard.createView);
+
+
 
 
 

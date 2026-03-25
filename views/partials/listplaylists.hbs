@@ -1,12 +1,28 @@
 <section class="ui left aligned middle aligned segment">
   
-  <h2>Playlist App Dashboard</h2>
+<section class="dashboard-header">
+
+  <h2 class="title">Playlist App Dashboard</h2>
+
+    <form action="/searchCategory" method="GET" class="ui form">
+
+      <div class="field">
+        <input type="text" name="searchTerm" placeholder="Search by title..." value="{{search}}">
+      </div>   
+
+    </form>
+
+</section>
+
   
+{{#unless search}}
   {{#unless playlists}}
     <h3 class="ui message">
-      Start adding your playlists!
+       Start adding your playlists!
     </h3>
   {{/unless}}
+{{/unless}}
+
 
   {{#each playlists}}
     <section class="ui left aligned middle aligned segment">
