@@ -1,4 +1,26 @@
 {
   "playlistCollection": [
+    {
+      "id": "2e032c6d-4d53-48c7-8804-52df366be9d6",
+      "title": "Homers Playlist",
+      "date": "2026-04-13T16:17:30.199Z",
+      "songs": []
+    },
+    {
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "35fcedc7-992a-4f16-b138-e6434b146dab",
+      "title": "Marges New Playlist",
+      "rating": null,
+      "songs": [],
+      "date": "2026-04-13T16:20:56.046Z"
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "fc44dcfb-e6cb-4e69-ba0d-e8875145e68b",
+      "title": "Homers New Playlist ",
+      "rating": null,
+      "songs": [],
+      "date": "2026-04-13T16:21:52.139Z"
+    }
   ]
 }
