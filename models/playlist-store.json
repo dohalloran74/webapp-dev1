@@ -1,12 +1,6 @@
 {
   "playlistCollection": [
     {
-      "id": "2e032c6d-4d53-48c7-8804-52df366be9d6",
-      "title": "Homers Playlist",
-      "date": "2026-04-13T16:17:30.199Z",
-      "songs": []
-    },
-    {
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "id": "35fcedc7-992a-4f16-b138-e6434b146dab",
       "title": "Marges New Playlist",
@@ -21,6 +15,20 @@
       "rating": null,
       "songs": [],
       "date": "2026-04-13T16:21:52.139Z"
+    },
+    {
+      "userid": "55a37e02-8ff4-43cb-bd1d-06d22ee887d6",
+      "id": "2dcd8409-1614-481b-8206-5ff127b108f3",
+      "title": "Barts New Playlist",
+      "rating": null,
+      "songs": [
+        {
+          "id": "9f233216-2b09-41a9-83c1-fdf3f448733a",
+          "title": "Scootman",
+          "artist": "BartSimpson"
+        }
+      ],
+      "date": "2026-04-13T16:27:03.967Z"
     }
   ]
 }
