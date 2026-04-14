@@ -9,7 +9,8 @@ const empStore = {
   collection: 'employees',
 
 
-  getAppInfo() {
+  //getAppInfo() { changed this to reflect the changes in the about.js file
+  getEmployees() {
     return this.store.findAll(this.collection);
   },
 
