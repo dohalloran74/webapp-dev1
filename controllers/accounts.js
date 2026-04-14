@@ -43,6 +43,9 @@ const accounts = {
     user.id = uuidv4();
     userStore.addUser(user);
     logger.info('registering' + user.email);
+//EXERCise 2 = set a cookie for the user once they registerand redirect to the start page, same as what happens below when the login and authenciate functions are successful.
+    response.cookie('playlist', user.email);
+    
     response.redirect('/');
   },
   
@@ -51,7 +54,8 @@ const accounts = {
     const user = userStore.getUserByEmail(request.body.email);
     if(user && user.password === request.body.password) {
     //if (user)  { ---EXERCISE 1--- this was the old code before I added the password field to the user object
-      response.cookie('playlist', user.email);
+    
+    response.cookie('playlist', user.email);
       logger.info('logging in' + user.email);
       response.redirect('/start');
     } else {

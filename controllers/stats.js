@@ -2,7 +2,9 @@
 import logger from "../utils/logger.js";
 import playlistStore from "../models/playlist-store.js";
 import accounts from './accounts.js';
+// EXERCISE 3:import userStore from "../models/user-store.js"; -- this is not needed in the stats controller as we want to be able to read in the user data to display in stats 
 
+import userStore from "../models/user-store.js";
 
 const stats = {
   createView(request, response) {
@@ -31,6 +33,11 @@ const stats = {
       let longestSize = playlists.length > 0 ? Math.max(...playlists.map(playlist => playlist.songs.length)) : 0;
       let longestPlaylists = playlists.filter(playlist => playlist.songs.length === longestSize);
       let longestPlaylistTitles = longestPlaylists.map(item => item.title);
+
+      // EXERCISE 3: Get user data for statistics
+      const users = userStore.getAllUsers();
+      //EXERCISE 3 : const numUsers = users.length; -- this is not needed in the stats controller as we are not displaying the number of users in the stats page, but I have left it here in case we want to add it in the future.
+      const numUsers = users.length;
       
       const statistics = {
         displayNumPlaylists: numPlaylists,
@@ -41,6 +48,7 @@ const stats = {
         displayFav: favTitles,
         longest: longestSize,
         longestTitles: longestPlaylistTitles,
+        displayNumUsers: numUsers, // EXERCISE 3: add number of users to the statistics object
       };
 
       const viewData = {
