@@ -35,7 +35,7 @@ const stats = {
       let longestPlaylistTitles = longestPlaylists.map(item => item.title);
 
       // EXERCISE 3: Get user data for statistics
-      const users = userStore.getAllUsers();
+      const users =                                                                 userStore.getAllUsers();
       //EXERCISE 3 : const numUsers = users.length; -- this is not needed in the stats controller as we are not displaying the number of users in the stats page, but I have left it here in case we want to add it in the future.
       const numUsers = users.length;
       

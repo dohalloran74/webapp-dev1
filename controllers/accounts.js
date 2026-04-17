@@ -46,7 +46,7 @@ const accounts = {
 //EXERCise 2 = set a cookie for the user once they registerand redirect to the start page, same as what happens below when the login and authenciate functions are successful.
     response.cookie('playlist', user.email);
     
-    response.redirect('/');
+    response.redirect('/start');
   },
   
   //authenticate function to check user credentials and either render the login page again or the start page.

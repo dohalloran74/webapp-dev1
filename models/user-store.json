@@ -20,6 +20,13 @@
       "email": "bart@simpson.com",
       "password": "secret",
       "id": "55a37e02-8ff4-43cb-bd1d-06d22ee887d6"
+    },
+    {
+      "firstName": "dee",
+      "lastName": "dee",
+      "email": "dee@dee.com",
+      "password": "123",
+      "id": "ab982f49-84c1-424c-85d0-547a643a6836"
     }
   ]
 }
