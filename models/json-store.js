@@ -99,6 +99,19 @@ class JsonStore {
     };
   }
 
+
+    async deleteFromCloudinary(publicId) {
+    return new Promise((resolve, reject) => {
+      cloudinary.uploader.destroy(publicId, (result, err) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+  }
+
 }
 
 export default JsonStore;
