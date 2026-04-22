@@ -63,23 +63,24 @@ const dashboard = {
 
 
 
-   addPlaylist(request, response) {
+     addPlaylist(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
-    logger.debug(loggedInUser.id);
     const timestamp = new Date();
 	
     const newPlaylist = {
-      userid: loggedInUser.id,
       id: uuidv4(),
+      userid: loggedInUser.id,
       title: request.body.title,
       rating: parseInt(request.body.rating),
       songs: [],
       date: timestamp
     };
 
-    playlistStore.addPlaylist(newPlaylist);
-    response.redirect('/dashboard');
+    playlistStore.addPlaylist(newPlaylist, request.files.picture, function() {
+        response.redirect("/dashboard");
+    });
   },
+
 
 
 deletePlaylist(request, response) {
