@@ -21,9 +21,18 @@ addSong(id, song) {
     this.store.addItem(this.collection, id, this.array, song);
 },
 
-addPlaylist(playlist) {
-    this.store.addCollection(this.collection, playlist);
-},
+// addPlaylist(playlist) {
+  async addPlaylist(playlist, file, response) {
+    try {
+      playlist.picture = await this.store.addToCloudinary(file);
+      this.store.addCollection(this.collection, playlist);
+      response();
+    } catch (error) {
+      logger.error("Error processing playlist:", error);
+      response(error);
+    }
+  },
+
 
 removeSong(id, songId) {
     this.store.removeItem(this.collection, id, this.array, songId);

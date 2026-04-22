@@ -93,6 +93,18 @@
       "rating": 10,
       "songs": [],
       "date": "2026-04-22T10:29:42.453Z"
+    },
+    {
+      "id": "55c671ff-7b23-49ed-a48f-c2ec58cd39c5",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "joans diner",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-22T10:46:16.831Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/dyckzbijb/image/upload/v1776854777/zpdsngplwk0wzbel6gve.jpg",
+        "public_id": "zpdsngplwk0wzbel6gve"
+      }
     }
   ]
 }
