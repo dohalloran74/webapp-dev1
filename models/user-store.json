@@ -27,6 +27,17 @@
       "email": "dee@dee.com",
       "password": "123",
       "id": "ab982f49-84c1-424c-85d0-547a643a6836"
+    },
+    {
+      "firstName": "charlie",
+      "lastName": "puppy",
+      "email": "charlie@puppy.com",
+      "password": "charlie",
+      "id": "d0503816-aee2-4d8e-9575-b74786839280",
+      "picture": {
+        "url": "http://res.cloudinary.com/dyckzbijb/image/upload/v1776862223/fuwip4vok9peydb3i1rd.jpg",
+        "public_id": "fuwip4vok9peydb3i1rd"
+      }
     }
   ]
 }
